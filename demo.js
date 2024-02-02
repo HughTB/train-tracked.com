@@ -32,7 +32,7 @@ window.onload = async function () {
         left.appendChild(toc);
 
         const dep_text = document.createElement("h3");
-        dep_text.innerText = `${dep_time.getHours()}:${dep_time.getMinutes()}`;
+        dep_text.innerText = `${dep_time.getHours()}:${dep_time.getMinutes().toString().padStart(2, '0')}`;
 
         const right = document.createElement("div");
         const platform_label = document.createElement("p");
