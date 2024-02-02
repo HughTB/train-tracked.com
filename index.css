@@ -113,7 +113,7 @@ code {
     font-size: max(16px, var(--base-font-size));
 }
 
-.footer {
+#footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -121,7 +121,7 @@ code {
     background-color: #FFFFFF16;
 }
 
-.footer p {
+#footer p {
     font-size: max(16px, calc(var(--base-font-size) * 0.75));
     margin: 0;
     padding: 0.35em;
