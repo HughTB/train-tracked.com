@@ -1,5 +1,9 @@
 async function get(url) {
-    const response = await fetch(url);
+    const response = await fetch(url, {
+        headers: {
+            "x-api-key": "doughnutStealMahD@a"
+        }
+    });
 
     if (response.status === 200) {
         return response.json();
@@ -10,7 +14,7 @@ async function get(url) {
 
 window.onload = async function () {
     const dep_box = document.getElementById("departures-box");
-    const departures = await get("https://api.train-tracked.com/departures?crs=PMH&token=doughnutStealMahD@a");
+    const departures = await get("https://api.train-tracked.com/departures?crs=PMH");
 
     dep_box.innerHTML = "";
 
