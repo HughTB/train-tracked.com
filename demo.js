@@ -1,6 +1,6 @@
 async function get(url) {
     const response = await fetch(url, {
-        credentials: "omit"
+        credentials: "omit",
         headers: {
             "x-api-key": "doughnutStealMahD@a",
         },
