@@ -1,8 +1,9 @@
 async function get(url) {
     const response = await fetch(url, {
+        credentials: "omit"
         headers: {
-            "x-api-key": "doughnutStealMahD@a"
-        }
+            "x-api-key": "doughnutStealMahD@a",
+        },
     });
 
     if (response.status === 200) {
